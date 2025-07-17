@@ -10,7 +10,8 @@ import "./App.css";
 // import MuiRating from "./components/MuiRating";
 // import MuiAutocomplete from "./components/MuiAutocomplete";
 // import MuiLayout from "./components/MuiLayout";
-import MuiAccordion from "./components/MuiAccordion";
+// import MuiAccordion from "./components/MuiAccordion";
+import MuiImageList from "./components/MuiImageList";
 
 function App() {
   return (
@@ -35,7 +36,9 @@ function App() {
 
       {/* <MuiCard /> */}
 
-      <MuiAccordion />
+      {/* <MuiAccordion /> */}
+
+      <MuiImageList />
     </div>
   );
 }
