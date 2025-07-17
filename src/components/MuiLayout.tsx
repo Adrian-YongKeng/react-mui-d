@@ -1,10 +1,15 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, Divider, Stack } from "@mui/material";
 
 const MuiLayout = () => {
   return (
     // Box component is the most basic form is used as a replacement to the div tag
-    <>
+    <Stack
+      sx={{ border: "1px solid" }}
+      direction="row"
+      spacing={2}
+      divider={<Divider orientation="vertical" flexItem />}
+    >
       <Box
         //   component="span"
         sx={{
@@ -26,7 +31,7 @@ const MuiLayout = () => {
         bgcolor="success.light"
         p={2}
       ></Box>
-    </>
+    </Stack>
   );
 };
 
