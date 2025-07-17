@@ -1,4 +1,5 @@
 import "./App.css";
+// import MuiCard from "./components/MuiCard";
 // import MuiCheckbox from "./components/MuiCheckbox";
 // import MuiButton from "./components/MuiButton";
 // import MuiTypography from "./components/MuiTypography";
@@ -8,7 +9,8 @@ import "./App.css";
 // import MuiSwitch from "./components/MuiSwitch";
 // import MuiRating from "./components/MuiRating";
 // import MuiAutocomplete from "./components/MuiAutocomplete";
-import MuiLayout from "./components/MuiLayout";
+// import MuiLayout from "./components/MuiLayout";
+import MuiAccordion from "./components/MuiAccordion";
 
 function App() {
   return (
@@ -29,7 +31,11 @@ function App() {
 
       {/* <MuiAutocomplete /> */}
 
-      <MuiLayout />
+      {/* <MuiLayout /> */}
+
+      {/* <MuiCard /> */}
+
+      <MuiAccordion />
     </div>
   );
 }
