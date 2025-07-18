@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import MuiCard from "./components/MuiCard";
 // import MuiCheckbox from "./components/MuiCheckbox";
@@ -16,45 +17,59 @@ import "./App.css";
 // import MuiNavbar from "./components/MuiNavbar";
 // import MuiBreadcrumb from "./components/MuiBreadcrumb";
 // import MuiDrawer from "./components/MuiDrawer";
-import MuiSpeedDial from "./components/MuiSpeedDial";
+// import MuiSpeedDial from "./components/MuiSpeedDial";
+import MuiBottomNavigation from "./components/MuiBottomNavigation";
+import Home from "./pages/Home";
+import Favorites from "./pages/Favorites";
+import Profile from "./pages/Profile";
 
 function App() {
   return (
-    <div className="App">
-      {/* <MuiTypography /> */}
-      {/* <MuiButton /> */}
+    <BrowserRouter>
+      <div className="App" style={{ paddingBottom: "66px" }}>
+        {/* <MuiTypography /> */}
+        {/* <MuiButton /> */}
 
-      {/* <MuiTextField />
+        {/* <MuiTextField />
       <MuiSelect /> */}
 
-      {/* <MuiRadioButton /> */}
+        {/* <MuiRadioButton /> */}
 
-      {/* <MuiCheckbox /> */}
+        {/* <MuiCheckbox /> */}
 
-      {/* <MuiSwitch /> */}
+        {/* <MuiSwitch /> */}
 
-      {/* <MuiRating /> */}
+        {/* <MuiRating /> */}
 
-      {/* <MuiAutocomplete /> */}
+        {/* <MuiAutocomplete /> */}
 
-      {/* <MuiLayout /> */}
+        {/* <MuiLayout /> */}
 
-      {/* <MuiCard /> */}
+        {/* <MuiCard /> */}
 
-      {/* <MuiAccordion /> */}
+        {/* <MuiAccordion /> */}
 
-      {/* <MuiImageList /> */}
+        {/* <MuiImageList /> */}
 
-      {/* <MuiNavbar /> */}
+        {/* <MuiNavbar /> */}
 
-      {/* <MuiLink /> */}
+        {/* <MuiLink /> */}
 
-      {/* <MuiBreadcrumb /> */}
+        {/* <MuiBreadcrumb /> */}
 
-      {/* <MuiDrawer /> */}
+        {/* <MuiDrawer /> */}
 
-      <MuiSpeedDial />
-    </div>
+        {/* <MuiSpeedDial /> */}
+
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/profile" element={<Profile />} />
+        </Routes>
+
+        <MuiBottomNavigation />
+      </div>
+    </BrowserRouter>
   );
 }
 
