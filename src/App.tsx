@@ -1,4 +1,5 @@
 import "./App.css";
+import MuiBreadcrumb from "./components/MuiBreadcrumb";
 import MuiLink from "./components/MuiLink";
 // import MuiCard from "./components/MuiCard";
 // import MuiCheckbox from "./components/MuiCheckbox";
@@ -44,7 +45,9 @@ function App() {
 
       <MuiNavbar />
 
-      <MuiLink />
+      {/* <MuiLink /> */}
+
+      <MuiBreadcrumb />
     </div>
   );
 }
