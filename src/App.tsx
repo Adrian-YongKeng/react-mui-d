@@ -1,4 +1,5 @@
 import "./App.css";
+import MuiLink from "./components/MuiLink";
 // import MuiCard from "./components/MuiCard";
 // import MuiCheckbox from "./components/MuiCheckbox";
 // import MuiButton from "./components/MuiButton";
@@ -42,6 +43,8 @@ function App() {
       {/* <MuiImageList /> */}
 
       <MuiNavbar />
+
+      <MuiLink />
     </div>
   );
 }
