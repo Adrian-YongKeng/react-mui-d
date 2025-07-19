@@ -1,5 +1,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import { LocalizationProvider } from "@mui/x-date-pickers";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 // import MuiCard from "./components/MuiCard";
 // import MuiCheckbox from "./components/MuiCheckbox";
 // import MuiButton from "./components/MuiButton";
@@ -25,7 +27,9 @@ import Profile from "./pages/Profile";
 // import MuiAlert from "./components/MuiAlert";
 // import MuiSnackbar from "./components/MuiSnackbar";
 import MuiDialog from "./components/MuiDialog";
-import MuiSkeleton from "./components/MuiSkeleton";
+import MuiPicker from "./components/MuiPicker";
+// import MuiSkeleton from "./components/MuiSkeleton";
+// import MuiLoadingButton from "./components/MuiLoadingButton";
 // import MuiProgress from "./components/MuiProgress";
 // import MuiBadge from "./components/MuiBadge";
 // import MuiList from "./components/MuiList";
@@ -36,73 +40,79 @@ import MuiSkeleton from "./components/MuiSkeleton";
 
 function App() {
   return (
-    <BrowserRouter>
-      <div className="App" style={{ paddingBottom: "66px" }}>
-        {/* <MuiTypography /> */}
-        {/* <MuiButton /> */}
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
+      <BrowserRouter>
+        <div className="App" style={{ paddingBottom: "66px" }}>
+          {/* <MuiTypography /> */}
+          {/* <MuiButton /> */}
 
-        {/* <MuiTextField />
+          {/* <MuiTextField />
       <MuiSelect /> */}
 
-        {/* <MuiRadioButton /> */}
+          {/* <MuiRadioButton /> */}
 
-        {/* <MuiCheckbox /> */}
+          {/* <MuiCheckbox /> */}
 
-        {/* <MuiSwitch /> */}
+          {/* <MuiSwitch /> */}
 
-        {/* <MuiRating /> */}
+          {/* <MuiRating /> */}
 
-        {/* <MuiAutocomplete /> */}
+          {/* <MuiAutocomplete /> */}
 
-        {/* <MuiLayout /> */}
+          {/* <MuiLayout /> */}
 
-        {/* <MuiCard /> */}
+          {/* <MuiCard /> */}
 
-        {/* <MuiAccordion /> */}
+          {/* <MuiAccordion /> */}
 
-        {/* <MuiImageList /> */}
+          {/* <MuiImageList /> */}
 
-        {/* <MuiNavbar /> */}
+          {/* <MuiNavbar /> */}
 
-        {/* <MuiLink /> */}
+          {/* <MuiLink /> */}
 
-        {/* <MuiBreadcrumb /> */}
+          {/* <MuiBreadcrumb /> */}
 
-        {/* <MuiDrawer /> */}
+          {/* <MuiDrawer /> */}
 
-        {/* <MuiSpeedDial /> */}
+          {/* <MuiSpeedDial /> */}
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/favorites" element={<Favorites />} />
-          <Route path="/profile" element={<Profile />} />
-        </Routes>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/favorites" element={<Favorites />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
 
-        {/* <MuiAvatar /> */}
+          {/* <MuiAvatar /> */}
 
-        {/* <MuiBadge /> */}
+          {/* <MuiBadge /> */}
 
-        {/* <MuiList /> */}
+          {/* <MuiList /> */}
 
-        {/* <MuiChip /> */}
+          {/* <MuiChip /> */}
 
-        {/* <MuiTooltip /> */}
+          {/* <MuiTooltip /> */}
 
-        {/* <MuiTable /> */}
+          {/* <MuiTable /> */}
 
-        {/* <MuiAlert /> */}
+          {/* <MuiAlert /> */}
 
-        {/* <MuiSnackbar /> */}
+          {/* <MuiSnackbar /> */}
 
-        <MuiDialog />
+          <MuiDialog />
 
-        {/* <MuiProgress /> */}
+          {/* <MuiProgress /> */}
 
-        <MuiSkeleton />
+          {/* <MuiSkeleton /> */}
 
-        <MuiBottomNavigation />
-      </div>
-    </BrowserRouter>
+          {/* <MuiLoadingButton /> */}
+
+          <MuiPicker />
+
+          <MuiBottomNavigation />
+        </div>
+      </BrowserRouter>
+    </LocalizationProvider>
   );
 }
 
