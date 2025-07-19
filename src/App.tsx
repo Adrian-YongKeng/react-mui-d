@@ -23,8 +23,9 @@ import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import Profile from "./pages/Profile";
 // import MuiBadge from "./components/MuiBadge";
-import MuiList from "./components/MuiList";
+// import MuiList from "./components/MuiList";
 // import MuiAvatar from "./components/MuiAvatar";
+import MuiChip from "./components/MuiChip";
 
 function App() {
   return (
@@ -74,7 +75,9 @@ function App() {
 
         {/* <MuiBadge /> */}
 
-        <MuiList />
+        {/* <MuiList /> */}
+
+        <MuiChip />
 
         <MuiBottomNavigation />
       </div>
