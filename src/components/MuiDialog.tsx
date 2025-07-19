@@ -22,6 +22,7 @@ const MuiDialog = () => {
         aria-describedby="dialog-description"
       >
         <DialogTitle id="dialog-title">Submit the Test?</DialogTitle>
+
         <DialogContent>
           <DialogContentText id="dialog-description">
             Are you sure you want to submit the test? you will not be able to

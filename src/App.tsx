@@ -22,9 +22,10 @@ import MuiBottomNavigation from "./components/MuiBottomNavigation";
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import Profile from "./pages/Profile";
-import MuiAlert from "./components/MuiAlert";
-import MuiSnackbar from "./components/MuiSnackbar";
+// import MuiAlert from "./components/MuiAlert";
+// import MuiSnackbar from "./components/MuiSnackbar";
 import MuiDialog from "./components/MuiDialog";
+// import MuiProgress from "./components/MuiProgress";
 // import MuiBadge from "./components/MuiBadge";
 // import MuiList from "./components/MuiList";
 // import MuiAvatar from "./components/MuiAvatar";
@@ -90,9 +91,11 @@ function App() {
 
         {/* <MuiAlert /> */}
 
-        <MuiSnackbar />
+        {/* <MuiSnackbar /> */}
 
         <MuiDialog />
+
+        {/* <MuiProgress /> */}
 
         <MuiBottomNavigation />
       </div>
