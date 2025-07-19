@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 
 const Home = () => {
   return (
-    <div>
+    <div style={{ padding: "4rem" }}>
       <Typography variant="h4" gutterBottom>
         Home
       </Typography>

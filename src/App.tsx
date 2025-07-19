@@ -22,7 +22,8 @@ import MuiBottomNavigation from "./components/MuiBottomNavigation";
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import Profile from "./pages/Profile";
-import MuiAvatar from "./components/MuiAvatar";
+import MuiBadge from "./components/MuiBadge";
+// import MuiAvatar from "./components/MuiAvatar";
 
 function App() {
   return (
@@ -68,7 +69,9 @@ function App() {
           <Route path="/profile" element={<Profile />} />
         </Routes>
 
-        <MuiAvatar />
+        {/* <MuiAvatar /> */}
+
+        <MuiBadge />
 
         <MuiBottomNavigation />
       </div>
