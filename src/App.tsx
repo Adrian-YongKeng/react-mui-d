@@ -26,7 +26,8 @@ import Profile from "./pages/Profile";
 // import MuiList from "./components/MuiList";
 // import MuiAvatar from "./components/MuiAvatar";
 // import MuiChip from "./components/MuiChip";
-import MuiTooltip from "./components/MuiTooltip";
+// import MuiTooltip from "./components/MuiTooltip";
+// import MuiTable from "./components/MuiTable";
 
 function App() {
   return (
@@ -80,7 +81,9 @@ function App() {
 
         {/* <MuiChip /> */}
 
-        <MuiTooltip />
+        {/* <MuiTooltip /> */}
+
+        {/* <MuiTable /> */}
 
         <MuiBottomNavigation />
       </div>
