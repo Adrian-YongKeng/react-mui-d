@@ -22,6 +22,8 @@ import MuiBottomNavigation from "./components/MuiBottomNavigation";
 import Home from "./pages/Home";
 import Favorites from "./pages/Favorites";
 import Profile from "./pages/Profile";
+import MuiAlert from "./components/MuiAlert";
+import MuiSnackbar from "./components/MuiSnackbar";
 // import MuiBadge from "./components/MuiBadge";
 // import MuiList from "./components/MuiList";
 // import MuiAvatar from "./components/MuiAvatar";
@@ -84,6 +86,10 @@ function App() {
         {/* <MuiTooltip /> */}
 
         {/* <MuiTable /> */}
+
+        {/* <MuiAlert /> */}
+
+        <MuiSnackbar />
 
         <MuiBottomNavigation />
       </div>
