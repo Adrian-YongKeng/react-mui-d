@@ -1,5 +1,4 @@
 import { Avatar, AvatarGroup, Stack } from "@mui/material";
-import React from "react";
 
 const MuiAvatar = () => {
   return (
