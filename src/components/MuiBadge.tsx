@@ -1,4 +1,3 @@
-import React from "react";
 import { Badge, Stack } from "@mui/material";
 import MailIcon from "@mui/icons-material/Mail";
 
