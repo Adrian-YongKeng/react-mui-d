@@ -7,7 +7,6 @@ import {
   Paper,
   Typography,
 } from "@mui/material";
-import React from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 const heights = [

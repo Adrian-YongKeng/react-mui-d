@@ -31,6 +31,7 @@ import MuiDialog from "./components/MuiDialog";
 // import MuiDateRangePicker from "./components/MuiDateRangePicker";
 import MuiTabs from "./components/MuiTabs";
 import MuiTimeline from "./components/MuiTimeline";
+import MuiResponsiveness from "./components/MuiResponsiveness";
 // import MuiMasonry from "./components/MuiMasonry";
 // import MuiSkeleton from "./components/MuiSkeleton";
 // import MuiLoadingButton from "./components/MuiLoadingButton";
@@ -120,6 +121,8 @@ function App() {
           <MuiTimeline />
 
           {/* <MuiMasonry /> */}
+
+          <MuiResponsiveness />
 
           <MuiBottomNavigation />
         </div>
