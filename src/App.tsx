@@ -29,6 +29,7 @@ import Profile from "./pages/Profile";
 import MuiDialog from "./components/MuiDialog";
 // import MuiPicker from "./components/MuiPicker";
 import MuiDateRangePicker from "./components/MuiDateRangePicker";
+import MuiTabs from "./components/MuiTabs";
 // import MuiSkeleton from "./components/MuiSkeleton";
 // import MuiLoadingButton from "./components/MuiLoadingButton";
 // import MuiProgress from "./components/MuiProgress";
@@ -110,7 +111,9 @@ function App() {
 
           {/* <MuiPicker /> */}
 
-          <MuiDateRangePicker />
+          {/* <MuiDateRangePicker /> */}
+
+          <MuiTabs />
 
           <MuiBottomNavigation />
         </div>

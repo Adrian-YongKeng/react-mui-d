@@ -48,7 +48,7 @@ const MuiDateRangePicker = () => {
         }}
       />
 
-      <Typography>TO</Typography>
+      <Typography>To</Typography>
 
       <DatePicker
         label="Check Out"
