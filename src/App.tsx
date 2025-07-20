@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import { LocalizationProvider } from "@mui/x-date-pickers";
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
+import { colors, createTheme, ThemeProvider } from "@mui/material";
 // import MuiCard from "./components/MuiCard";
 // import MuiCheckbox from "./components/MuiCheckbox";
 // import MuiButton from "./components/MuiButton";
@@ -43,91 +44,108 @@ import MuiResponsiveness from "./components/MuiResponsiveness";
 // import MuiTooltip from "./components/MuiTooltip";
 // import MuiTable from "./components/MuiTable";
 
+const theme = createTheme({
+  status: {
+    danger: "#e53e3e",
+  },
+  palette: {
+    secondary: {
+      main: colors.orange[500],
+    },
+    neutral: {
+      main: colors.grey[500],
+      darker: colors.grey[800],
+    },
+  },
+});
+
 function App() {
   return (
-    <LocalizationProvider dateAdapter={AdapterDateFns}>
-      <BrowserRouter>
-        <div className="App" style={{ paddingBottom: "66px" }}>
-          {/* <MuiTypography /> */}
-          {/* <MuiButton /> */}
+    <ThemeProvider theme={theme}>
+      <LocalizationProvider dateAdapter={AdapterDateFns}>
+        <BrowserRouter>
+          <div className="App" style={{ paddingBottom: "66px" }}>
+            {/* <MuiTypography /> */}
+            {/* <MuiButton /> */}
 
-          {/* <MuiTextField />
+            {/* <MuiTextField />
       <MuiSelect /> */}
 
-          {/* <MuiRadioButton /> */}
+            {/* <MuiRadioButton /> */}
 
-          {/* <MuiCheckbox /> */}
+            {/* <MuiCheckbox /> */}
 
-          {/* <MuiSwitch /> */}
+            {/* <MuiSwitch /> */}
 
-          {/* <MuiRating /> */}
+            {/* <MuiRating /> */}
 
-          {/* <MuiAutocomplete /> */}
+            {/* <MuiAutocomplete /> */}
 
-          {/* <MuiLayout /> */}
+            {/* <MuiLayout /> */}
 
-          {/* <MuiCard /> */}
+            {/* <MuiCard /> */}
 
-          {/* <MuiAccordion /> */}
+            {/* <MuiAccordion /> */}
 
-          {/* <MuiImageList /> */}
+            {/* <MuiImageList /> */}
 
-          {/* <MuiNavbar /> */}
+            {/* <MuiNavbar /> */}
 
-          {/* <MuiLink /> */}
+            {/* <MuiLink /> */}
 
-          {/* <MuiBreadcrumb /> */}
+            {/* <MuiBreadcrumb /> */}
 
-          {/* <MuiDrawer /> */}
+            {/* <MuiDrawer /> */}
 
-          {/* <MuiSpeedDial /> */}
+            {/* <MuiSpeedDial /> */}
 
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/favorites" element={<Favorites />} />
-            <Route path="/profile" element={<Profile />} />
-          </Routes>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/favorites" element={<Favorites />} />
+              <Route path="/profile" element={<Profile />} />
+            </Routes>
 
-          {/* <MuiAvatar /> */}
+            {/* <MuiAvatar /> */}
 
-          {/* <MuiBadge /> */}
+            {/* <MuiBadge /> */}
 
-          {/* <MuiList /> */}
+            {/* <MuiList /> */}
 
-          {/* <MuiChip /> */}
+            {/* <MuiChip /> */}
 
-          {/* <MuiTooltip /> */}
+            {/* <MuiTooltip /> */}
 
-          {/* <MuiTable /> */}
+            {/* <MuiTable /> */}
 
-          {/* <MuiAlert /> */}
+            {/* <MuiAlert /> */}
 
-          {/* <MuiSnackbar /> */}
+            {/* <MuiSnackbar /> */}
 
-          <MuiDialog />
+            <MuiDialog />
 
-          {/* <MuiProgress /> */}
+            {/* <MuiProgress /> */}
 
-          {/* <MuiSkeleton /> */}
+            {/* <MuiSkeleton /> */}
 
-          {/* <MuiLoadingButton /> */}
+            {/* <MuiLoadingButton /> */}
 
-          {/* <MuiPicker /> */}
+            {/* <MuiPicker /> */}
 
-          {/* <MuiDateRangePicker /> */}
+            {/* <MuiDateRangePicker /> */}
 
-          <MuiTabs />
+            <MuiTabs />
 
-          <MuiTimeline />
+            <MuiTimeline />
 
-          {/* <MuiMasonry /> */}
+            {/* <MuiMasonry /> */}
 
-          <MuiResponsiveness />
+            <MuiResponsiveness />
 
-          <MuiBottomNavigation />
-        </div>
-      </BrowserRouter>
-    </LocalizationProvider>
+            <MuiBottomNavigation />
+          </div>
+        </BrowserRouter>
+      </LocalizationProvider>
+    </ThemeProvider>
   );
 }
 
